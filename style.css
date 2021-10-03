@@ -1,0 +1,41 @@
+
+:root{
+  --bg-r: 220;
+--bg-g: 79;
+--bg-b: 0;
+--i-bg-r: calc(255 - var(--bg-r));
+--i-bg-g: calc(255 - var(--bg-g));
+--i-bg-b: calc(255 - var(--bg-b));
+--bg-color: rgb(var(--bg-r),var(--bg-g),var(--bg-b));
+--accent-color: rgb(var(--i-bg-r),var(--i-bg-g),var(--i-bg-b));
+--fg-color: rgba(255,255,255,0.9);
+--min-menu-size: 300px;
+--transition: 0.3s;
+}
+
+/* Tweet formatting */
+.tweet {
+  /* font-size: 20px; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #15202b;
+  margin-top: 1vh;
+  padding-left: 1vw;
+  transition: var(--transition);
+  border-radius: 7px;
+  line-height: 1.8;
+}
+.tweet:hover {
+  background-color: #15202b;
+  box-shadow: 0 0 10px 0 #15202b;
+}
+.tweet .at, .tweet .hashtag, .tweet .link{
+  color: rgb(27, 149, 224);
+}
+.tweet > a{
+  color: white;
+  text-decoration: none;
+}
+.tweet > a:visited{
+  /* font-size: 12px; */
+}
