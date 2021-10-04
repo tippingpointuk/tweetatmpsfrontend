@@ -39,3 +39,36 @@
 .tweet > a:visited{
   /* font-size: 12px; */
 }
+
+#mp-tweet-generator-button{
+  display: inline-block;
+  background-color: #fc0d1b;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border-width: 0;
+  /* font-family: $header-font-stack; */
+  font-size: 20px;
+  transition:  0.3s  ease-in-out;
+  font-weight: normal;
+  text-transform: uppercase;
+
+}
+#mp-tweet-generator-button:hover {
+    text-decoration: none;
+    background-color: #950912;
+}
+#mp-tweet-generator-button:visited {
+    color: white;
+}
+
+#mp-tweet-generator-loading{
+  max-width: 2em;
+}
+#mp-tweet-generator-loading.hide{
+  display: none;
+}
+#mp-tweet-generator-loading.show{
+  display: inline;
+}

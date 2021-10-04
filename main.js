@@ -1,4 +1,6 @@
 const generateTweets = function (e){
+  $('#mp-tweet-generator-loading').addClass("show")
+  $('#mp-tweet-generator-loading').removeClass("hide")
   console.log(e);
   $.get("https://tweeter.tippingpointuk.workers.dev/3", function(data){
     console.log(data);
@@ -7,6 +9,8 @@ const generateTweets = function (e){
       htmlOut += generateHtmlTweet(data.tweets[i])
     }
     $('#mp-tweet-generator-insert-target').html(htmlOut);
+    $('#mp-tweet-generator-loading').addClass("hide")
+    $('#mp-tweet-generator-loading').removeClass("show")
   })
 }
 
@@ -43,6 +47,5 @@ const generateHtmlTweet = function(tweet){
 
 // Event handling
 $( document ).on('load', function (){
-  return;
 });
 $('#mp-tweet-generator-button').on('click', generateTweets);
