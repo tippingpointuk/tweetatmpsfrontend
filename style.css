@@ -29,7 +29,7 @@
   background-color: #15202b;
   box-shadow: 0 0 10px 0 #15202b;
 }
-.tweet .at, .tweet .hashtag, .tweet .link{
+.tweet .at, .tweet .hashtag, .tweet .url{
   color: rgb(27, 149, 224);
 }
 .tweet > a{
