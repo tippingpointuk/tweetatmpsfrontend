@@ -40,3 +40,7 @@ Each embed code contains a few parts:
 <div class="Tweets-Output" id="mp-tweet-generator-insert-target" tweets=4 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwHmxiJpl1HS8SMe"></div>
 <script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
 ```
+
+<div class=""><button type="button" name="generateTweets" id="mp-tweet-generator-button">Generate Tweets!</button><img id="mp-tweet-generator-loading" src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide"/></div>
+<div class="Tweets-Output" id="mp-tweet-generator-insert-target" tweets=4 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwHmxiJpl1HS8SMe"></div>
+<script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
