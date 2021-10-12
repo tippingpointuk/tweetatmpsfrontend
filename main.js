@@ -12,7 +12,7 @@ const generateTweets = function (e){
     "tweetView": tweetView,
     "tweets": noTweets
   }
-  $.post("http://127.0.0.1:8787/",JSON.stringify(tweetsData), insertTweets, 'json')
+  $.post("https://tweeter.tippingpointuk.workers.dev/",JSON.stringify(tweetsData), insertTweets, 'json')
 }
 
 const insertTweets = (data) => {
