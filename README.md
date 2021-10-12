@@ -25,6 +25,12 @@ Each embed code contains a few parts:
 <script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
 ```
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css">
+<div class=""><button type="button" name="generateTweets" id="mp-tweet-generator-button">Generate Tweets!</button><img id="mp-tweet-generator-loading" src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide"/></div>
+<div class="Tweets-Output" id="mp-tweet-generator-insert-target" tweets=4 mp-airtable-view=viwmvRNLuTByBvMnV tweets-airtable-view=viwT9DujPVYtrAhk8></div>
+<script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
+
 ### All MPs in the Conservative Environment Network
 
 ```html
