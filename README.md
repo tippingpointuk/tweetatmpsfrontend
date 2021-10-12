@@ -20,14 +20,14 @@ Each embed code contains a few parts:
 ```html
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css">
-<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=18 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwHmxiJpl1HS8SMe"></div>
+<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=18 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwT9DujPVYtrAhk8"></div>
 <script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
 ```
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css">
 
-<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=18 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwHmxiJpl1HS8SMe"></div>
+<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=18 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwT9DujPVYtrAhk8"></div>
 
 ### All MPs in the Conservative Environment Network
 
