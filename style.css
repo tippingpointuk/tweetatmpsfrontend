@@ -1,46 +1,31 @@
-
-:root{
-  --bg-r: 220;
---bg-g: 79;
---bg-b: 0;
---i-bg-r: calc(255 - var(--bg-r));
---i-bg-g: calc(255 - var(--bg-g));
---i-bg-b: calc(255 - var(--bg-b));
---bg-color: rgb(var(--bg-r),var(--bg-g),var(--bg-b));
---accent-color: rgb(var(--i-bg-r),var(--i-bg-g),var(--i-bg-b));
---fg-color: rgba(255,255,255,0.9);
---min-menu-size: 300px;
---transition: 0.3s;
-}
-
 /* Tweet formatting */
-.tweet {
+.mp-tweet-generator-output .tweet {
   /* font-size: 20px; */
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-color: #15202b;
   margin-top: 1vh;
   padding-left: 1vw;
-  transition: var(--transition);
+  transition: box-shadow 0.3s;
   border-radius: 7px;
   line-height: 1.8;
 }
-.tweet:hover {
+.mp-tweet-generator-output .tweet:hover {
   background-color: #15202b;
   box-shadow: 0 0 10px 0 #15202b;
 }
-.tweet .at, .tweet .hashtag, .tweet .url{
+.mp-tweet-generator-output .tweet .at, .tweet .hashtag, .tweet .url{
   color: rgb(27, 149, 224);
 }
-.tweet > a{
+.mp-tweet-generator-output .tweet > a{
   color: white;
   text-decoration: none;
 }
-.tweet > a:visited{
+.mp-tweet-generator-output .tweet > a:visited{
   /* font-size: 12px; */
 }
 
-#mp-tweet-generator-button{
+.mp-tweet-generator-button button{
   display: inline-block;
   background-color: #fc0d1b;
   color: white;
@@ -55,20 +40,20 @@
   text-transform: uppercase;
 
 }
-#mp-tweet-generator-button:hover {
+.mp-tweet-generator-button button:hover {
     text-decoration: none;
     background-color: #950912;
 }
-#mp-tweet-generator-button:visited {
+.mp-tweet-generator-button button:visited {
     color: white;
 }
 
-#mp-tweet-generator-loading{
+.mp-tweet-generator-loading{
   max-width: 2em;
 }
-#mp-tweet-generator-loading.hide{
+.mp-tweet-generator-loading.hide{
   display: none;
 }
-#mp-tweet-generator-loading.show{
+.mp-tweet-generator-loading.show{
   display: inline;
 }

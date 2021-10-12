@@ -1,31 +1,35 @@
 const generateTweets = function (e){
-  var loadingSymbol = $("#mp-tweet-generator-loading");
-  var tweetInsetBox = $('#mp-tweet-generator-insert-target');
+  var loadingSymbol = $(e.currentTarget).children(".mp-tweet-generator-loading");
+  var tweetInsetBox = $(e.currentTarget).next(".mp-tweet-generator-output ");
   var noTweets = tweetInsetBox.attr('tweets') || 4;
-  var mpView = tweetInsetBox.attr('mp-airtable-view') || "viwT9DujPVYtrAhk8";
-  var tweetView = tweetInsetBox.attr('tweets-airtable-view') || "viwypQZddK7OJOQpU";
+  var mpView = tweetInsetBox.attr('mp-airtable-view') || "viwGU0zXycPJNKFLN";
+  var tweetView = tweetInsetBox.attr('tweets-airtable-view') || "viwT9DujPVYtrAhk8";
   loadingSymbol.addClass("show");
   loadingSymbol.removeClass("hide");
-  console.log(e);
   var tweetsData = {
     "mpView": mpView,
     "tweetView": tweetView,
     "tweets": noTweets
   }
-  $.post("https://tweeter.tippingpointuk.workers.dev/",JSON.stringify(tweetsData), insertTweets, 'json')
+  $.post(
+    "https://tweeter.tippingpointuk.workers.dev",
+    JSON.stringify(tweetsData),
+    function(data){
+      insertTweets(data,loadingSymbol,tweetInsetBox);
+    },
+    'json')
 }
 
-const insertTweets = (data) => {
-  var loadingSymbol = $("#mp-tweet-generator-loading");
+const insertTweets = function(data,loadingSymbol,tweetInsetBox){
   console.log(data);
   var htmlOut = ""
   for (var i in data.tweets){
     htmlOut += data.tweets[i].html
   }
-  $('#mp-tweet-generator-insert-target').html(htmlOut);
+  tweetInsetBox.html(htmlOut);
   loadingSymbol.removeClass("show");
   loadingSymbol.addClass("hide");
 }
 
 // Event handling
-$('#mp-tweet-generator-button').on('click', generateTweets);
+$('.mp-tweet-generator-button').on('click', generateTweets);
