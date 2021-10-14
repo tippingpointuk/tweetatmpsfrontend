@@ -1,5 +1,7 @@
 # Tweet generating tool
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script><link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css">
+
 A tool for generating tweets to target MPs. Made for the #StopCambo group.
 
 ## Embed codes
@@ -38,6 +40,17 @@ and this at the end of the `<body>`:
 
 Some specific examples:
 
+### All MPs
+
+```html
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css">
+<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=4 mp-airtable-view="viwGU0zXycPJNKFLN" tweets-airtable-view="viweN6f6dTW13lJkd"></div>
+<script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
+```
+
+<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=4 mp-airtable-view="viwGU0zXycPJNKFLN" tweets-airtable-view="viweN6f6dTW13lJkd"></div>
+
 ### All conservative MPs with twitter handles
 
 ```html
@@ -47,7 +60,7 @@ Some specific examples:
 <script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
 ```
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script><link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css"><div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=4 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwT9DujPVYtrAhk8"></div>
+<div class="mp-tweet-generator-button"><button type="button" name="generateTweets">Generate Tweets!</button><img src="https://tippingpointuk.github.io/tweetatmpsfrontend/loading.svg" class="hide mp-tweet-generator-loading"/></div><div class="mp-tweet-generator-output" tweets=4 mp-airtable-view="viwAfHCIKMuHjpoKO" tweets-airtable-view="viwT9DujPVYtrAhk8"></div>
 
 ### All MPs in the Conservative Environment Network
 
