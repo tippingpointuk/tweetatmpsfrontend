@@ -21,10 +21,11 @@ const generateTweets = function (e){
 }
 
 const insertTweets = function(data,loadingSymbol,tweetInsetBox){
-  console.log(data);
   var htmlOut = ""
   for (var i in data.tweets){
-    htmlOut += data.tweets[i].html
+    if (Object.keys(data.tweets[i]).includes('html')){
+      htmlOut += data.tweets[i].html
+    }
   }
   tweetInsetBox.html(htmlOut);
   loadingSymbol.removeClass("show");
