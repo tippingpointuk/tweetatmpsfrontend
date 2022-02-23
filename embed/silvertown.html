@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8"></meta>
-    <title></title>
+    <meta charset="utf-8"/>
+    <title>Silvertown embed</title>
   </head>
   <body>
-    <script src="../jquery.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://tippingpointuk.github.io/tweetatmpsfrontend/style.css">
     <p>Add your email if you would like to be contacted by the Silvertown tunnel coalition</p>
     <input type="text" name="email_address" value="" placeholder="Email address" id="email-address-tweet">
     <div class="mp-tweet-generator-button">
       <button type="button" name="generateTweets">Generate Tweets!</button><img src="../loading.svg" class="hide mp-tweet-generator-loading"/>
     </div>
     <div class="mp-tweet-generator-output"  mp-airtable-view="viw2loKSmw5VQXusl" tweets-airtable-view="viwVc0fT1XqygIzFV" data-group=silvertown></div>
-    <script src="../main.js" charset="utf-8"></script>
+    <script src="https://tippingpointuk.github.io/tweetatmpsfrontend/main.js" charset="utf-8"></script>
+
     <script type="text/javascript">
       function sendOutreach(e){
         var tweet = JSON.parse(decodeURIComponent(e.getAttribute("data-tweet")));
